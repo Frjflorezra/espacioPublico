@@ -1,6 +1,6 @@
 # Medellín · Los lugares que nos encuentran
 
-Presentación interactiva del inventario y diagnóstico del espacio público, preparada para GitHub Pages el 28 de octubre de 2026.
+Presentación interactiva del inventario y diagnóstico del espacio público, actualizada para GitHub Pages el 29 de octubre de 2026.
 
 ## Subir al repositorio
 
@@ -27,7 +27,7 @@ El paquete contiene aproximadamente 120 MB. Las rutas relativas admiten una publ
 
 El enlace publicado requiere conexión. Para la socialización sin internet, conserva la carpeta original **Aplicacion EPEE** o el paquete offline. La información recolectada se integra en SGEP, módulo de SGVIAL de uso institucional. El enlace a SGVIAL abre el sistema institucional en otra pestaña y requiere conexión.
 
-Las categorías del inventario conservan sus cifras provisionales y los avisos de revisión. Se incluyen los últimos ajustes de portada, colores, fecha, mapas y reapertura de fichas.
+El inventario oficial reúne 3.063 EPEE y un área de 14.405.379,41 m². La clasificación del Excel corresponde a 1.198 parques, 107 plazas, 1.749 zonas verdes recreacionales y 9 miradores. Los filtros comparten mapa, lista y estadísticas: 3.035 registros tienen geometría y 28 permanecen disponibles sin ella. El balance distrital oficial se presenta separado de los resultados calculados sobre el Excel.
 
 ## Actualizaciones
 
