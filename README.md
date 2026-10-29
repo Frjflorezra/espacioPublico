@@ -25,7 +25,7 @@ El paquete contiene aproximadamente 120 MB. Las rutas relativas admiten una publ
 
 ## Para presentar
 
-El enlace publicado requiere conexión. Para la socialización sin internet, conserva la carpeta original **Aplicacion EPEE** o el paquete offline. El acceso a SGVIAL abre un sistema externo y requiere conexión.
+El enlace publicado requiere conexión. Para la socialización sin internet, conserva la carpeta original **Aplicacion EPEE** o el paquete offline. La información recolectada se integra en SGEP, módulo de SGVIAL de uso institucional. El enlace a SGVIAL abre el sistema institucional en otra pestaña y requiere conexión.
 
 Las categorías del inventario conservan sus cifras provisionales y los avisos de revisión. Se incluyen los últimos ajustes de portada, colores, fecha, mapas y reapertura de fichas.
 
