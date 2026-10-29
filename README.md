@@ -27,7 +27,7 @@ El paquete contiene aproximadamente 120 MB. Las rutas relativas admiten una publ
 
 El enlace publicado requiere conexión. Para la socialización sin internet, conserva la carpeta original **Aplicacion EPEE** o el paquete offline. La información recolectada se integra en SGEP, módulo de SGVIAL de uso institucional. El enlace a SGVIAL abre el sistema institucional en otra pestaña y requiere conexión.
 
-El inventario oficial reúne 3.063 EPEE y un área de 14.405.379,41 m². La clasificación del Excel corresponde a 1.198 parques, 107 plazas, 1.749 zonas verdes recreacionales y 9 miradores. Los filtros comparten mapa, lista y estadísticas: 3.035 registros tienen geometría y 28 permanecen disponibles sin ella. El balance distrital oficial se presenta separado de los resultados calculados sobre el Excel.
+El inventario oficial reúne 3.063 EPEE y un área de 14.405.379,41 m². La clasificación corresponde a 1.198 parques, 107 plazas, 1.749 zonas verdes recreacionales y 9 miradores. Mapa, lista y estadísticas comparten los filtros. La comuna o corregimiento también se puede elegir directamente junto a las estadísticas. Se muestran cantidades de mobiliario, superficies en m² y árboles o palmas por clase, con sus unidades separadas. Los usos sociales cuentan espacios con respuestas registradas. El balance distrital oficial conserva su referencia fija. El capítulo del inventario se recorre por Panorama, Elementos y Mapa, mostrando una vista a la vez. Las fichas técnicas son el apartado 3 y las alertas el 4; el libro cierra el recorrido.
 
 ## Actualizaciones
 
