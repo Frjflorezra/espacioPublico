@@ -446,6 +446,12 @@ button,input,select{font-family:Arial,Helvetica,sans-serif}
 .diagnosis-breakdown thead th{font-size:12px;overflow-wrap:anywhere}
 .diagnosis-breakdown tbody th{font-size:13px;font-weight:normal}
 .diagnosis-breakdown td{font-size:19px;font-weight:bold;font-variant-numeric:tabular-nums}
+.diagnosis-breakdown tr[data-diagnosis-category="parque"],.diagnosis-breakdown tr[data-diagnosis-category="plaza"]{background:#dce6ef}
+.diagnosis-breakdown tr[data-diagnosis-category] th{font-weight:bold}
+.diagnosis-breakdown tr[data-diagnosis-category]{background:#dce6ef}
+.diagnosis-breakdown .diagnosis-subtype th{padding-left:28px;color:#405567;font-size:12px}
+.diagnosis-breakdown .diagnosis-subtype td{font-size:16px;font-weight:normal;color:#405567}
+@media(max-width:600px){.diagnosis-breakdown .diagnosis-subtype th{padding-left:14px;font-size:10px}.diagnosis-breakdown .diagnosis-subtype td{font-size:14px}}
 .diagnosis-breakdown thead th:nth-child(2){border-top:3px solid #101F32}
 .diagnosis-breakdown thead th:nth-child(3){border-top:3px solid #ED7D31}
 .diagnosis-breakdown thead th:nth-child(4){border-top:3px solid #02C3CE}
@@ -453,6 +459,7 @@ button,input,select{font-family:Arial,Helvetica,sans-serif}
 .diagnosis-breakdown tfoot th,.diagnosis-breakdown tfoot td{border-bottom:0}
 .diagnosis-breakdown>p{font-size:11px;color:#405567;line-height:1.6;margin:14px 0 0}
 @media(max-width:600px){.diagnosis-breakdown th,.diagnosis-breakdown td{padding:12px 5px}.diagnosis-breakdown thead th{font-size:9px;hyphens:auto}.diagnosis-breakdown tbody th{font-size:10px}.diagnosis-breakdown td{font-size:16px}.diagnosis-breakdown h4{font-size:18px}}
+@media(max-width:480px){.diagnosis-breakdown th:first-child{width:30%}.diagnosis-breakdown th,.diagnosis-breakdown td{padding-left:3px;padding-right:3px}.diagnosis-breakdown td,.diagnosis-breakdown .diagnosis-subtype td{font-size:13px}.diagnosis-breakdown tfoot th{font-size:11px}}
 .category-comparison{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr);gap:48px;padding:32px 0 10px;align-items:start}
 .category-comparison h3{font-family:'Arial Black',Arial,sans-serif;color:#101F32;font-size:clamp(23px,2.4vw,32px);line-height:1.15;margin:10px 0 16px;max-width:340px}
 .category-comparison-intro>p:last-child{font-size:13px;line-height:1.7;color:#405567;max-width:360px}
@@ -536,7 +543,7 @@ button,input,select{font-family:Arial,Helvetica,sans-serif}
 </div>
 <div class="inventory-view" id="inventory-overview" role="region" aria-label="Panorama del inventario">
 <section class="category-comparison" aria-labelledby="category-comparison-title"><div class="category-comparison-intro"><p class="eyebrow">Antes y después del contrato</p><h3 id="category-comparison-title">Los espacios públicos, por categoría.</h3><p>Comparación distrital de la clasificación de los espacios públicos. Estas cifras son fijas y se conservan al filtrar por comuna o corregimiento.</p></div><table class="category-comparison-table"><caption class="visually-hidden">Cantidad de espacios públicos por categoría antes del contrato y en los resultados</caption><thead><tr><th scope="col">Categoría</th><th scope="col">Antes del contrato</th><th scope="col">Resultados</th></tr></thead><tbody><tr><th scope="row">Parques</th><td>833</td><td>1.198</td></tr><tr><th scope="row">Plazas</th><td>86</td><td>107</td></tr><tr><th scope="row">Zonas verdes recreacionales</th><td>2.146</td><td>1.749</td></tr><tr><th scope="row">Miradores panorámicos</th><td>7</td><td>9</td></tr></tbody></table></section>
-<section class="official-diagnosis" aria-labelledby="official-diagnosis-title"><div class="diagnosis-intro"><p class="eyebrow">Diagnóstico según el inventario</p><h3 id="official-diagnosis-title">Un diagnóstico para orientar el cuidado.</h3><p>Calificaciones registradas de los 3.063 espacios públicos. El desglose cuenta una vez cada espacio y conserva el balance distrital al aplicar filtros.</p></div><ul class="diagnosis-bars"><li><div class="diagnosis-label"><strong>Reconstrucción</strong><span>Calificación 0–5,99</span></div><div class="diagnosis-track" aria-hidden="true"><span style="width:28.50%;--bar-color:#101F32"></span></div><p><strong>873</strong><span>28,50 %</span></p></li><li><div class="diagnosis-label"><strong>Mejoramiento</strong><span>Calificación 6–7,99</span></div><div class="diagnosis-track" aria-hidden="true"><span style="width:33.95%;--bar-color:#ED7D31"></span></div><p><strong>1.040</strong><span>33,95 %</span></p></li><li><div class="diagnosis-label"><strong>Mantenimiento</strong><span>Calificación 8–10</span></div><div class="diagnosis-track" aria-hidden="true"><span style="width:37.54%;--bar-color:#02C3CE"></span></div><p><strong>1.150</strong><span>37,54 %</span></p></li></ul><div class="diagnosis-breakdown"><h4 id="diagnosis-breakdown-title">La calificación, por tipo de espacio.</h4><table aria-labelledby="diagnosis-breakdown-title"><thead><tr><th scope="col">Tipo de espacio</th><th scope="col">Reconstrucción</th><th scope="col">Mejoramiento</th><th scope="col">Mantenimiento</th></tr></thead><tbody><tr data-diagnosis-category="parque"><th scope="row">Parques</th><td>234</td><td>407</td><td>557</td></tr><tr data-diagnosis-category="plaza"><th scope="row">Plazas</th><td>10</td><td>17</td><td>80</td></tr><tr data-diagnosis-category="verde"><th scope="row">Zonas verdes recreacionales</th><td>628</td><td>612</td><td>509</td></tr><tr data-diagnosis-category="mirador"><th scope="row">Miradores panorámicos</th><td>1</td><td>4</td><td>4</td></tr></tbody><tfoot><tr><th scope="row">Total</th><td>873</td><td>1.040</td><td>1.150</td></tr></tfoot></table><p>Parques incluye parques cívicos. Los porcentajes se redondean a dos decimales.</p></div></section>
+<section class="official-diagnosis" aria-labelledby="official-diagnosis-title"><div class="diagnosis-intro"><p class="eyebrow">Diagnóstico del espacio público</p><h3 id="official-diagnosis-title">Un diagnóstico para orientar el cuidado.</h3><p>Balance distrital de los 3.063 espacios públicos. Estas cifras permanecen fijas al aplicar filtros.</p></div><ul class="diagnosis-bars"><li><div class="diagnosis-label"><strong>Reconstrucción</strong><span>Calificación 0–5,99</span></div><div class="diagnosis-track" aria-hidden="true"><span style="width:26.80%;--bar-color:#101F32"></span></div><p><strong>821</strong><span>26,80 %</span></p></li><li><div class="diagnosis-label"><strong>Mejoramiento</strong><span>Calificación 6–7,99</span></div><div class="diagnosis-track" aria-hidden="true"><span style="width:35.49%;--bar-color:#ED7D31"></span></div><p><strong>1.087</strong><span>35,49 %</span></p></li><li><div class="diagnosis-label"><strong>Mantenimiento</strong><span>Calificación 8–10</span></div><div class="diagnosis-track" aria-hidden="true"><span style="width:37.71%;--bar-color:#02C3CE"></span></div><p><strong>1.155</strong><span>37,71 %</span></p></li></ul><div class="diagnosis-breakdown"><h4 id="diagnosis-breakdown-title">La calificación, por tipo de espacio.</h4><table aria-labelledby="diagnosis-breakdown-title"><thead><tr><th scope="col">Tipo de espacio</th><th scope="col">Reconstrucción</th><th scope="col">Mejoramiento</th><th scope="col">Mantenimiento</th><th scope="col">Total general</th></tr></thead><tbody><tr data-diagnosis-category="parque"><th scope="row">Parques</th><td>236</td><td>407</td><td>555</td><td>1.198</td></tr><tr class="diagnosis-subtype" data-diagnosis-subtype="Ecoparque"><th scope="row">Ecoparque</th><td>119</td><td>155</td><td>148</td><td>422</td></tr><tr class="diagnosis-subtype" data-diagnosis-subtype="Parque recreativo"><th scope="row">Parque recreativo</th><td>117</td><td>244</td><td>389</td><td>750</td></tr><tr class="diagnosis-subtype" data-diagnosis-subtype="Parque cívico"><th scope="row">Parque cívico</th><td>0</td><td>8</td><td>18</td><td>26</td></tr><tr data-diagnosis-category="plaza"><th scope="row">Plazas</th><td>11</td><td>16</td><td>80</td><td>107</td></tr><tr class="diagnosis-subtype" data-diagnosis-subtype="Plaza"><th scope="row">Plaza</th><td>0</td><td>1</td><td>7</td><td>8</td></tr><tr class="diagnosis-subtype" data-diagnosis-subtype="Plazoleta"><th scope="row">Plazoleta</th><td>10</td><td>12</td><td>57</td><td>79</td></tr><tr class="diagnosis-subtype" data-diagnosis-subtype="Plazuela"><th scope="row">Plazuela</th><td>1</td><td>3</td><td>16</td><td>20</td></tr><tr data-diagnosis-category="verde"><th scope="row">Zona verde recreacional</th><td>573</td><td>660</td><td>516</td><td>1.749</td></tr><tr data-diagnosis-category="mirador"><th scope="row">Mirador panorámico</th><td>1</td><td>4</td><td>4</td><td>9</td></tr></tbody><tfoot><tr><th scope="row">Total general</th><td>821</td><td>1.087</td><td>1.155</td><td>3.063</td></tr></tfoot></table></div></section>
 <div class="inventory-next-views"><p>Continúa el recorrido por el inventario.</p><button type="button" data-inventory-open="elements">Ver cantidades de elementos <span aria-hidden="true">→</span></button><button type="button" data-inventory-open="map">Explorar el mapa <span aria-hidden="true">↗</span></button></div>
 </div>
 <div class="inventory-view" id="inventory-elements" role="region" aria-label="Cantidades de elementos" hidden>
@@ -592,6 +599,11 @@ button,input,select{font-family:Arial,Helvetica,sans-serif}
 
 
 
+
+
+
+
+
 <section class="tools-section chapter technical-section" id="herramientas" data-title="Las fichas técnicas" aria-labelledby="tools-title">
 <div class="wrap">
 <div class="technical-heading"><div><p class="eyebrow"><span class="section-number">04</span>Las fichas técnicas</p><h2 id="tools-title">Criterios para<br><em>cuidar lo común.</em></h2></div><div class="technical-intro"><p>Detrás de cada elemento hay decisiones de diseño, construcción y mantenimiento. Explora las fichas desde un espacio que compartimos.</p><div class="technical-delivery"><strong>21</strong><span>Fichas de especificaciones técnicas<small>Resultado reportado en la presentación del contrato</small></span></div></div></div>
@@ -612,6 +624,11 @@ button,input,select{font-family:Arial,Helvetica,sans-serif}
 <div class="technical-panel-bottom"><p class="technical-key-label">En esta temática</p><ul id="technical-keys"></ul><button type="button" class="technical-open" id="technical-open">Ver láminas de la ficha <span aria-hidden="true">↗</span></button><a class="technical-source" id="technical-source" href="assets/technical/andenes.pdf#page=15" target="_blank" rel="noopener">Consultar documento completo ↗</a><p id="technical-summary-source" class="technical-summary-source"></p></div>
 </aside></div>
 </div></section>
+
+
+
+
+
 
 
 
@@ -691,6 +708,11 @@ button,input,select{font-family:Arial,Helvetica,sans-serif}
 <div class="technical-viewer-bottom"><div class="technical-plate-nav"><button type="button" id="technical-plate-prev" aria-label="Lámina anterior">←</button><p id="technical-plate-status" role="status"></p><button type="button" id="technical-plate-next" aria-label="Lámina siguiente">→</button></div><div class="technical-pdf-actions"><a id="technical-pdf-open" href="assets/technical/andenes.pdf" target="_blank" rel="noopener">Abrir PDF ↗</a><a id="technical-pdf-save" href="assets/technical/andenes.pdf" download>Guardar PDF ↓</a></div></div>
 <p class="technical-viewer-hint" id="technical-viewer-hint">Usa las flechas para recorrer las láminas. Esc cierra el visor.</p>
 </dialog>
+
+
+
+
+
 
 
 
